@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class = "min-h-screen bg-pink-600 flex justify-center items-center">
+            <div class = "bg-pink-300 rounded-md p-5 text-center">
+                <h1 class = "text-bold text-3xl">Real time character counter</h1>
+                <textarea id = "text" class = "w-full mt-5 transition-all duration-500 opacity-100" maxlength="50"></textarea>
+                <div class = "flex justify-between">
+                    <p>character count: <span id = "livechar"></span></p>
+                    <p>remaining character: <span id = "remchar"></span></p>
+                </div>
+                <button id = "btn" class = "bg-pink-400 m-3">reset</button>
+                <p id = "warning"></p>
+            </div>
+        </div>
+        <script src = "javascript.js"></script>
+    </body>
+</html>
